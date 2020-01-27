@@ -8,10 +8,21 @@
 Marie Formation
 """,
     'author': 'Odoo SA',
+    'images': [
+        'static/description/website_theme_screenshot.jpg',
+    ],
     'depends': [
         'website_sale',
     ],
     'data': [
+
+    #data
+
+    #website assets
+
+    #layout
+
+    #pages
 
     ],
     'installable': True,
