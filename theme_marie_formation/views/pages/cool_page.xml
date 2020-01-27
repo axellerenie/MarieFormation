@@ -16,7 +16,6 @@
                                         <canvas class="cst-3d" id="background"/>
                                     </div>
                                 </div>
-
                                 <div class="row">
                                     <div class="container text-center mb-3">
                                         <button type="button" class="btn btn-primary btn-lg">Primary</button>
@@ -27,9 +26,12 @@
                                         <button type="button" class="btn btn-info btn-lg">Info</button>
                                         <button type="button" class="btn btn-light btn-lg">Light</button>
                                         <button type="button" class="btn btn-dark btn-lg">Dark</button>
-
                                         <button type="button" class="btn btn-link">Link</button>
                                     </div>
+                                </div>
+
+                                <div class="row">
+                                    <img class="text-center" src="/theme_marie_formation/static/src/img/comme-a-la-radio.jpg" alt="Brigitte Fontaine"/>
                                 </div>
                             </div>
                         </div>

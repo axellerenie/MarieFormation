@@ -2,14 +2,13 @@ odoo.define('theme_marie_formation.container3d', function(require) {
     'use strict';
 
     var sAnimation = require('website.content.snippets.animation');
+
     sAnimation.registry.container3d = sAnimation.Class.extend({
         selector: '.cst-3d',
         start: function() {
             var self = this;
-
-
-
             var conf = {
+
                 fov: 75,
                 cameraZ: 75,
                 xyCoef: 50,
@@ -21,7 +20,6 @@ odoo.define('theme_marie_formation.container3d', function(require) {
                 light3Color: 0x18C02C,
                 light4Color: 0xee3bcf,
             };
-
 
             let renderer, scene, camera, cameraCtrl, light1, light2, light3, light4, gArray;
             let width, height, cx, cy, wWidth, wHeight;
@@ -191,8 +189,6 @@ odoo.define('theme_marie_formation.container3d', function(require) {
                 return [width, height];
             }
         }
-
-
 
     });
 
