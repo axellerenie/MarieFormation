@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
+
+        <record id="template_call" model="ir.ui.view">
+            <field name="name">My Template Call</field>
+            <field name="type">qweb</field>
+            <field name="key">theme_marie_formation.template_call</field>
+            <field name="arch" type="xml">
+                <t t-raw="0"/>
+            </field>
+        </record>
+
+        <record id="template" model="ir.ui.view">
+            <field name="name">My Template</field>
+            <field name="type">qweb</field>
+            <field name="key">theme_marie_formation.template</field>
+            <field name="arch" type="xml">
+                <h1>My Template with raw=0</h1>
+            </field>
+        </record>
+
         <record id="with_odoo_context" model="ir.ui.view">
             <field name="name">With Odoo Context</field>
             <field name="type">qweb</field>
@@ -16,7 +35,14 @@
                                 </div>
                             </div>
                         </div>
+                        <hr/>
+                        <t t-call="theme_marie_formation.template_call">
+                            <h1>My template</h1>
+                        </t>
+                        <hr/>
+                        <t t-call="theme_marie_formation.template"/>
                     </t>
+
                 </t>
             </field>
         </record>
@@ -37,6 +63,9 @@
         </xpath>
         <xpath expr="//h1" position="attributes">
             <attribute name="class">mt32 my-class-name</attribute>
+        </xpath>
+        <xpath expr="//h2[2]" position="attributes">
+            <attribute name="class">mt16 text-center</attribute>
         </xpath>
     </template>
 
