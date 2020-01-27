@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-
     <data>
         <record id="some_qweb_logics" model="ir.ui.view">
             <field name="name">Some Qweb Logics</field>
@@ -18,19 +17,27 @@
 
                                     <!-- declare in QWEB some variables -->
                                     <t t-set="name_of_variable_string" t-value="'value of variable'"/>
+                                    <t t-set="html_string" t-value="'&amp;lt;h1&amp;gt;value&amp;lt;/h1&amp;gt;'" />
                                     <t t-set="name_of_variable_array" t-value="[1,2,3]"/>
+                                    <t t-set="name_of_variable_dict" t-value="{'item1':1,'item2':2,'item3':3}"/>
 
                                     <!-- display them in the template -->
                                     <h1 t-esc="name_of_variable_string"/>
+
+                                    <h1 t-esc="html_string"/>
+                                    <h1 t-raw="html_string"/>
 
                                     <hr/>
                                     <t t-foreach="name_of_variable_array" t-as="var">
                                         <h2 t-esc="var"/>
                                     </t>
                                     <hr/>
+                                    <t t-foreach="name_of_variable_dict" t-as="var">
+                                        <h2 t-esc="name_of_variable_dict [var]"/>
+                                    </t>
+                                    <hr/>
 
                                     <t t-foreach="name_of_variable_array" t-as="var">
-
                                         <t t-if="var == 1">
                                             <h3 t-esc="var"/>
                                         </t>
@@ -39,9 +46,14 @@
                                         </t>
                                     </t>
                                     <hr/>
-                                    
+
+                                    <!-- each templates have the request object (odoo objet inherited from requests python) -->
+                                    <t t-set="url_params" t-value="request.params"/>
+                                    <t t-raw="url_params"/>
+
+
                                     <!-- create q query directly in Qweb -->
-                                    <t t-set="contacts" t-value="request.env['res.partner'].sudo().search([],order='name')"/>
+                                    <t t-set="contacts" t-value="request.env['res.partner'].search([],order='name')"/>
                                     <ul>
                                         <li t-foreach="contacts" t-as="contact">
                                             <t t-esc="contact"/>|<t t-esc="contact.name"/>
