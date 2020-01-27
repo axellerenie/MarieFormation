@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="menu_without_odoo_context" model="website.menu">
+            <field name="name">without odoo context</field>
+            <field name="url">/without_odoo_context</field>
+            <field name="parent_id" ref="website.main_menu"/>
+        </record>
+
+        <record id="menu_with_odoo_context" model="website.menu">
+            <field name="name">with odoo context</field>
+            <field name="url">/with_odoo_context</field>
+            <field name="parent_id" ref="website.main_menu"/>
+        </record>
+
+        <record id="menu_qweb_logic" model="website.menu">
+            <field name="name">qweb logics</field>
+            <field name="url">/some_qweb_logics</field>
+            <field name="parent_id" ref="website.main_menu"/>
+        </record>
+
+        <record id="menu_with_controller" model="website.menu">
+            <field name="name">with controller</field>
+            <field name="url">/with_controller</field>
+            <field name="parent_id" ref="website.main_menu"/>
+        </record>
+
+    </data>
+</odoo>

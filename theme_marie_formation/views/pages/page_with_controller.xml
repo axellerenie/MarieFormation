@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="page_with_controller">
+        <t name="Page With Controller"/>
+        <t t-call="website.layout">
+            <div id="wrap">
+                <div class="oe_structure">
+                    <div class="container">
+                        <h1 class="mt32">Page With Controller</h1>
+                        <h2>My Variable:<t t-esc="variable"/></h2>
+                        <hr/>
+                        <h3>Number of contacts :
+                            <b t-esc="len(contacts)"/></h3>
+                        <div class="row">
+                            <div class="card col-3" t-foreach="contacts" t-as="contact">
+                                <!-- to display the picture, he have to give the read rule to public user -->
+                                <img class="card-img-top" t-att-src="'/web/image/res.partner/%i/image_1920' %contact.id" alt="Card image cap"/>
+                                <div class="card-body">
+                                    <h5 class="card-title"><t t-esc="contact.name"/></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+
+</odoo>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="without_odoo_context" model="ir.ui.view">
+            <field name="name">Without Context</field>
+            <field name="type">qweb</field>
+            <field name="key">theme_marie_formation.without_odoo_context</field>
+            <field name="arch" type="xml">
+                <t name="Without Context" t-name="theme_marie_formation.without_odoo_context">
+                    <h1>without_odoo_context</h1>
+                    <h2>You have nothing!!</h2>
+                    <p>(not even boostrap, jquery, header ... nothing 😓 )</p>
+
+                </t>
+            </field>
+        </record>
+    </data>
+    <data>
+        <record id="without_odoo_context_page" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/without_odoo_context</field>
+            <field name="view_id" ref="without_odoo_context"/>
+        </record>
+    </data>
+</odoo>
