@@ -3,7 +3,12 @@
     <template id="assets_frontend" inherit_id="web.assets_frontend" name="Website Assets">
         <xpath expr="//link[last()]" position="after">
             <link rel="stylesheet" type="text/scss" href="/theme_marie_formation/static/src/scss/main.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_marie_formation/static/src/scss/effect.scss"/>
         </xpath>
-        <!-- <xpath expr="//script[last()]" position="after"> <script type="text/javascript" src="/website_qweb/static/src/js/simple.js"/> </xpath> -->
+        <xpath expr="//script[last()]" position="after">
+            <script type="text/javascript" src="/theme_marie_formation/static/lib/simplex-noise.js"/>
+            <script type="text/javascript" src="/theme_marie_formation/static/lib/three.js"/>
+            <script type="text/javascript" src="/theme_marie_formation/static/src/js/main.js"/>
+        </xpath>
     </template>
 </odoo>

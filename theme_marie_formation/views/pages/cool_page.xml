@@ -12,6 +12,9 @@
                             <div class="oe_structure">
                                 <div class="container">
                                     <h1 class="mt32">Cool Page</h1>
+                                    <div class="cst-3d-container">
+                                        <canvas class="cst-3d" id="background"/>
+                                    </div>
                                 </div>
                             </div>
                         </div>
