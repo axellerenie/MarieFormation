@@ -16,21 +16,21 @@ Marie Formation
     ],
     'data': [
 
-    'data/website_menu.xml',
-
     #data
+    'data/website_menu.xml',
 
     #website assets
     'views/assets.xml',
 
     #layout
+    'views/layout.xml',
 
     #pages
-
     'views/pages/page_with_controller.xml',
     'views/pages/some_qweb_logics.xml',
     'views/pages/without_odoo_context.xml',
     'views/pages/with_odoo_context.xml',
+    'views/pages/cool_page.xml',
     ],
     'installable': True,
     'application': True,

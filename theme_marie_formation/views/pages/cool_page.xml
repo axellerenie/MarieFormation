@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="cool_page" model="ir.ui.view">
+            <field name="name">Cool Page</field>
+            <field name="type">qweb</field>
+            <field name="key">theme_marie_formation.cool_page</field>
+            <field name="arch" type="xml">
+                <t name="With Context" t-name="theme_marie_formation.cool_page">
+                    <t t-call="website.layout">
+                        <div id="wrap">
+                            <div class="oe_structure">
+                                <div class="container">
+                                    <h1 class="mt32">Cool Page</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+
+    </data>
+
+    <data>
+        <record id="cool_page" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/cool_page</field>
+            <field name="view_id" ref="cool_page"/>
+        </record>
+    </data>
+
+</odoo>
