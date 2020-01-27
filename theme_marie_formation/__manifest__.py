@@ -9,7 +9,7 @@ Marie Formation
 """,
     'author': 'Odoo SA',
     'depends': [
-
+        'website_sale',
     ],
     'data': [
 
