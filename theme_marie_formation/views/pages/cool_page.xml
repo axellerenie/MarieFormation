@@ -12,8 +12,23 @@
                             <div class="oe_structure">
                                 <div class="container">
                                     <h1 class="mt32">Cool Page</h1>
-                                    <div class="cst-3d-container">
+                                    <div class="cst-3d-container mb-3">
                                         <canvas class="cst-3d" id="background"/>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="container text-center mb-3">
+                                        <button type="button" class="btn btn-primary btn-lg">Primary</button>
+                                        <button type="button" class="btn btn-secondary btn-lg">Secondary</button>
+                                        <button type="button" class="btn btn-success btn-lg">Success</button>
+                                        <button type="button" class="btn btn-danger btn-lg">Danger</button>
+                                        <button type="button" class="btn btn-warning btn-lg">Warning</button>
+                                        <button type="button" class="btn btn-info btn-lg">Info</button>
+                                        <button type="button" class="btn btn-light btn-lg">Light</button>
+                                        <button type="button" class="btn btn-dark btn-lg">Dark</button>
+
+                                        <button type="button" class="btn btn-link">Link</button>
                                     </div>
                                 </div>
                             </div>

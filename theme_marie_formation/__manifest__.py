@@ -12,6 +12,7 @@ Marie Formation
         'static/description/website_theme_screenshot.jpg',
     ],
     'depends': [
+        'website_theme_install',
         'website_sale',
     ],
     'data': [

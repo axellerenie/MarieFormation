@@ -1,0 +1,33 @@
+//------------------------------------------------------------------------------
+// Fonts
+//------------------------------------------------------------------------------
+
+$o-theme-fonts: (
+    ('Pattaya', sans-serif),
+    ('Roboto', sans-serif),
+
+);
+$o-theme-font-urls: (
+    'Pattaya&display=swap',
+    'Roboto:400,400i,700,700i',
+
+);
+$o-theme-font-names: (
+    'Pattaya',
+    'Roboto',
+
+);
+
+//------------------------------------------------------------------------------
+// Website customizations
+//------------------------------------------------------------------------------
+
+$o-website-values-palettes: (
+    (
+        'header-font-size': 1rem,
+        'font-number': 1,
+        'headings-font-number': 1,
+        'navbar-font-number': 1,
+        'buttons-font-number': 1,
+    ),
+);
